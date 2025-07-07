@@ -35,7 +35,7 @@ def train(model, train_loader, dayid, device='cpu', save_dir='./', resume=''):
         loss.backward()
         optimizer.step()
 
-        print(f"batch: {i}, loss: {loss}")
+        # print(f"batch: {i}, loss: {loss}")
 
     # save
     os.makedirs(save_dir, exist_ok=True)
