@@ -12,7 +12,7 @@ from model_config import *
 
 class MangoDataset(Dataset):
     def __init__(self, data_dir, dayid, max_seq_len=100):
-        self.df = pd.read_parquet(f'{data_dir}/train_day{dayid}_dl.parquet')[:800]
+        self.df = pd.read_parquet(f'{data_dir}/train_day{dayid}_dl.parquet')
         self.max_seq_len = max_seq_len
 
     def __len__(self):
